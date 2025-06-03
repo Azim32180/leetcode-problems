@@ -1,21 +1,3 @@
-function solution(s) {
-  const freq = {};
-  for (let i = 0; i < s.length; i++) {
-    let char = s[i];
-    if (freq[char]) {
-      freq[char]++;
-    } else {
-      freq[char] = 1;
-    }
-  }
-  for (let i = 0; i < s.length; i++) {
-    if (freq[s[i]] === 1) {
-      return s[i];
-    }
-  }
-  return "_";
-}
-
 // Test Cases
 function runTests() {
   const testCases = [
