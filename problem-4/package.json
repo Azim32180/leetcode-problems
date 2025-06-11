@@ -1,0 +1,18 @@
+{
+  "name": "leetcode-practice",
+  "version": "1.0.0",
+  "description": "LeetCode problem solving environment",
+  "main": "index.js",
+  "scripts": {
+    "test": "node problem4-test.js",
+    "test:problem1": "node problem4-test.js",
+    "debug": "node --inspect-brk problem4-test.js"
+  },
+  "keywords": [
+    "leetcode",
+    "algorithms",
+    "practice"
+  ],
+  "author": "Azim",
+  "license": "MIT"
+}
