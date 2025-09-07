@@ -41,3 +41,26 @@ Note that the five elements can be returned in any order.
 It does not matter what you leave beyond the returned k (hence they are underscores).
 
 */
+
+/**
+ * @param {number[]} nums
+ * @param {number} val
+ * @return {number}
+ */
+var removeElement = function (nums, val) {
+  let k = 0; // declaring a pointer that will help with placing the non-val numbers in the front
+
+  for (let i = 0; i < nums.length; i++) {
+    // for loop that goes through each number in the array
+
+    if (nums[i] !== val) {
+      // we are checking if a current number isn't equal to val
+
+      nums[k] = nums[i]; // if it isn't, we are placing that number at the front of the array using our second pointer
+
+      k++; // incrementing our pointer to keep track of all the numbers moved forward in the array
+    }
+  }
+
+  return k; // returning the number of elements that are not equal to VAL.
+};
