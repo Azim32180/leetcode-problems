@@ -8,13 +8,13 @@
 var canConstruct = function(ransomNote, magazine) {
     const map = {}
 
-    for (const char of magazine) {
-        map[char] = (map[char] || 0) + 1
+    for (const charM of magazine) {
+        map[charM] = (map[charM] || 0) + 1
     }
 
-    for (const char of ransomNote) {
-        if (!map[char]) return false 
-        map[char]-- 
+    for (const charR of ransomNote) {
+        if (!map[charR]) return false 
+        map[charR]-- 
     }
     
     return true
