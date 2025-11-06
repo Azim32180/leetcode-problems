@@ -27,8 +27,11 @@ var isValid = function(s) {
 
     }
 
-return stack.length === 0
-
+    if (stack.length === 0) {
+        return true
+    } else {
+        return false
+    }
 
     
 };
